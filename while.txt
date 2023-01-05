@@ -1,0 +1,66 @@
+Write a  program to count number of digits in a number.
+
+
+Number = int(input("Please Enter any Number: "))
+Count = 0
+while(Number > 0):
+    Number = Number // 10
+    Count = Count + 1
+
+print("\n Number of Digits in a Given Number = %d" %Count)
+
+
+Write a  program to find first and last digit of a number.
+
+
+
+number = int(input("Please Enter any Number: "))
+
+last_digit = number % 10
+
+print("The Last Digit in a Given Number %d = %d" %(number, last_digit))
+
+
+
+
+n=275853
+while n >= 10:  
+        n = n // 10;
+print(n)
+
+
+Write a  program to swap first and last digits of a number.
+
+
+def swap( num ):
+    str_num = str( num )
+    digits = []
+    i = 0
+
+    while( i < len( str_num ) ):
+        digits.append( str_num[ i ] )
+        i += 1
+
+    digits[0], digits[ len( digits ) - 1 ] = digits[ len( digits ) - 1 ], digits[0]
+
+
+    joined_digits = ''.join( digits )
+    return int( joined_digits )
+
+print( swap( 2665 ) )
+
+
+
+
+# Python Program to find Sum of Digits of a Number using While Loop
+
+Number = int(input("Please Enter any Number: "))
+Sum = 0
+
+while(Number > 0):
+    Reminder = Number % 10
+    Sum = Sum + Reminder
+    Number = Number //10
+
+print("\n Sum of the digits of Given Number = %d" %Sum)
+
